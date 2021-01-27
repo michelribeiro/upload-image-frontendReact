@@ -6,7 +6,7 @@ const Upload = ({onUpload}: any) => {
 
     let renderDragMessage = (isDragActive:any, isDragReject: any) => {
         if(!isDragActive) {
-            return <UploadMessage>Arraste arquivos aqui...</UploadMessage>
+            return <UploadMessage>Arraste imagens aqui...</UploadMessage>
         }
         if(isDragReject) {
             return <UploadMessage type="error">Arquivo não suportado</UploadMessage>
