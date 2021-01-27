@@ -11,7 +11,7 @@ interface PropsFiles {
   uploaded: boolean;
   error: boolean;
   url: string;
-  onDelete: (id: number) => {};
+  onDelete: (id: number) => number;
 }
 
 const FileListItem = ({

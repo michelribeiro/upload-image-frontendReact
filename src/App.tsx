@@ -55,7 +55,6 @@ const App: React.FC = () => {
     },[])
 
     const handleUpload = (files:any) => {
-
         const uploaded:AttrFiles[] = files.map((file:any) => ({
             file,
             id: uniqueId(),
@@ -111,8 +110,8 @@ const App: React.FC = () => {
             })
         });
     }
-    //TODO: Resolver o tipo recebido do componente FileListItem
-    const handleDelete = async (id:number) => {
+
+    const handleDelete = (id:number):any => {
         api.delete(`posts/${id}`).then(info => {
             console.info(info)
         }).catch( err => console.error(err));
